@@ -21,10 +21,6 @@ Route::get('/', function () {
             'comics',
             'movies',
             'tv',
-            'games',
-            'collectibles',
-            'videos',
-            'fans',
             'news',
             'shop',
         ]
