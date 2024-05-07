@@ -14,6 +14,11 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
+
+    
+    $comics = config('comics');
+    
+    $comicsCollection = collect($comics);
     
     $data = [
         'nav_items' => [
@@ -23,7 +28,12 @@ Route::get('/', function () {
             'tv',
             'news',
             'shop',
-        ]
+        ],
+        'comics'
     ];
+    
     return view('home', $data);
 });
+
+
+
