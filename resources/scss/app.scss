@@ -50,10 +50,23 @@ body{
     justify-content: center;
     margin-top: 3rem;
 }
+.fa-play{
+    z-index: 999;
+    opacity: 1;
+    position: absolute;
+    top: 30%;
+    left: 45%;
+    font-size: 6rem;
+    filter: drop-shadow(0 1rem 1rem rgb(160, 0, 210));
+    cursor: pointer;
+}
 .movie_card:hover{
     filter: brightness(0.3);
 }
-.movie_card:hover::after{
-    content: 'VEDIAMO';
-    color: white;
+.fa-plat:hover .movie_card{
+    opacity: 1;
+}
+.movies-container{
+    background-image: url(../images/movies/1310578.jpg);
+    background-color: purple;
 }
