@@ -18,9 +18,12 @@
 
         @include ('partials.comics')
 
-        <button class="btn btn-primary btn-lg mt-3" type="button">
-            Watch a movie instead
-        </button>
+        <div class="btn_box">
+            <button class="btn btn-primary btn-lg mt-3" type="button">
+                Watch a movie instead
+            </button>
+        </div>
+
     </div>
 </div>
 

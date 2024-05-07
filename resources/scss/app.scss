@@ -40,3 +40,13 @@ body{
         background-color: #450264c5
     }
 }
+.my_card{
+    img{
+        height: 500px;
+    }
+}
+.btn_box{
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+}

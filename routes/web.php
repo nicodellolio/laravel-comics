@@ -19,7 +19,7 @@ Route::get('/', function () {
     $comics = config('comics');
     
     $comicsCollection = collect($comics);
-    
+
     $data = [
         'nav_items' => [
             'characters',
@@ -29,7 +29,7 @@ Route::get('/', function () {
             'news',
             'shop',
         ],
-        'comics'
+        'comics' => $comics
     ];
     
     return view('home', $data);
