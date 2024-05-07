@@ -50,3 +50,10 @@ body{
     justify-content: center;
     margin-top: 3rem;
 }
+.movie_card:hover{
+    filter: brightness(0.3);
+}
+.movie_card:hover::after{
+    content: 'VEDIAMO';
+    color: white;
+}

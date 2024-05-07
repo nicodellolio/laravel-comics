@@ -9,9 +9,15 @@
     </div>
     <nav>
         <ul class="nav_list d-flex list-unstyled fs-5">
-            @foreach ($nav_items as $nav_item)
-            <li class="px-3 text-uppercase">{{ $nav_item }}</li>
-            @endforeach
+            <li class="px-3 text-uppercase">characters</li>
+            <li class="px-3 text-uppercase">comics</li>
+
+            <li class="px-3 text-uppercase">
+                <a href="{{ route('movies') }}">movies</a>
+            </li>
+            
+            <li class="px-3 text-uppercase">news</li>
+            <li class="px-3 text-uppercase">shop</li>
         </ul>
     </nav>
     <div class="search border-bottom border-primary">

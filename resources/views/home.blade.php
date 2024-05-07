@@ -19,9 +19,11 @@
         @include ('partials.comics')
 
         <div class="btn_box">
-            <button class="btn btn-primary btn-lg mt-3" type="button">
-                Watch a movie instead
-            </button>
+            <a href="{{ route('movies') }}">
+                <button class="btn btn-primary btn-lg mt-3" type="button">
+                    Watch a movie instead
+                </button>
+            </a>
         </div>
 
     </div>

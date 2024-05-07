@@ -35,5 +35,19 @@ Route::get('/', function () {
     return view('home', $data);
 });
 
+Route::get('/movies', function () {
+
+    $movies = config('movies');
+    
+    $moviesCollection = collect($movies);
+
+
+    $data = [
+        'movies' => $movies
+    ];
+    
+    return view('movies', $data);
+})->name('movies');
+
 
 
