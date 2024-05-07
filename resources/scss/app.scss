@@ -1,1 +1,25 @@
 @import '~bootstrap/scss/bootstrap';
+
+body{
+    background-color: #333;
+}
+
+.header_ban{
+    background-color: purple;
+}
+.logo{
+    color: purple;
+    cursor: pointer;
+}
+.nav_list{
+    font-weight: 500;
+    padding-top: 1rem;
+    >li{
+        cursor: pointer;
+    }
+}
+.nav_list:last-child::after{
+    content: '⏷';
+    margin-left: -0.5rem;
+    color: purple;
+}
