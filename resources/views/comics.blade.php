@@ -8,7 +8,7 @@
         @foreach ($comics as $index => $comic)
         <div class="col p-2">
 
-            <a href="{{route('comic', ['id' => $index])}}">
+            <a class="text-decoration-none" href="{{route('comic', ['id' => $index])}}">
 
                 <div class="card bg-secondary my_card h-100">
                     <img class="card-img-top" src="{{$comic['thumb']}}" alt="">

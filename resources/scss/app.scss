@@ -65,6 +65,13 @@ body{
         height: 500px;
     }
 }
+
+.card_single{
+    margin-top: 20%;
+    > img{
+       height: 100%;
+    }
+}
 .btn_box{
     display: flex;
     justify-content: center;
@@ -89,10 +96,14 @@ body{
 .movies-container{
     background-image: url(../images/movies/1310578.jpg);
 }
-.comics_collection_grid{
+.comics_collection_grid, .single_comic_container{
     background-image: url(../images/comics-bg.jpeg);
     background-color: #333;
     background-blend-mode:darken;
+}
+.single_comic_container{
+    height: 100vh;
+
 }
 .nothing_to_show{
     background-image: url(../images/sad-bg.webp);
@@ -100,4 +111,12 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 35%;
+}
+.back{
+    margin: 20% 0 0 13%;
+
+    a{
+        font-size: 2rem;
+        padding: 1rem 3rem;
+    }
 }

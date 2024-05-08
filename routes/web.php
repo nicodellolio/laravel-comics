@@ -93,5 +93,5 @@ Route::get('/comic/{id}', function ($id) {
         'comic' => $comic
     ];
 
-    return view('comics', $data);
+    return view('comic', $data);
 })->name('comic');
