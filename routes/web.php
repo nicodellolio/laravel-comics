@@ -41,8 +41,8 @@ Route::get('/comics', function () {
         'comics' => $comics
     ];
     
-    return view('comics', $data);
-})->name('comics');
+    return view('nav.comics', $data);
+})->name('nav.comics');
 
 Route::get('/movies', function () {
 
@@ -55,32 +55,32 @@ Route::get('/movies', function () {
         'movies' => $movies
     ];
     
-    return view('movies', $data);
-})->name('movies');
+    return view('nav.movies', $data);
+})->name('nav.movies');
 
 Route::get('/characters', function () {
 
     $data = [
     ];
     
-    return view('characters',$data);
-})->name('characters');
+    return view('nav.characters',$data);
+})->name('nav.characters');
 
 Route::get('/news', function () {
 
     $data = [
     ];
     
-    return view('news',$data);
-})->name('news');
+    return view('nav.news',$data);
+})->name('nav.news');
 
 Route::get('/shop', function () {
 
     $data = [
     ];
     
-    return view('shop',$data);
-})->name('shop');
+    return view('nav.shop',$data);
+})->name('nav.shop');
 
 Route::get('/comic/{id}', function ($id) {
 

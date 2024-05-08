@@ -31,7 +31,7 @@
             </div>
         </div>
         <div class="back">
-            <a class="btn btn-warning rounded-3 fw-light btn-sm " href="{{route('comics')}}" role="button">
+            <a class="btn btn-warning rounded-3 fw-light btn-sm " href="{{route('nav.comics')}}" role="button">
                 Go back
             </a>
         </div>

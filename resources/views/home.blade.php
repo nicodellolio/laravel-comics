@@ -16,12 +16,12 @@
         </p>
 
         <div class="btn_box d-flex justify-content-evenly">
-            <a class="" href="{{ route('comics') }}">
+            <a class="" href="{{ route('nav.comics') }}">
                 <button class="btn btn-warning btn-lg mt-3 fs-3 py-3 px-5 fw-bold" type="button">
                     Have a look at the new comics
                 </button>
             </a>
-            <a href="{{ route('movies') }}">
+            <a href="{{ route('nav.movies') }}">
                 <button class="btn btn-primary btn-lg mt-3 fs-3 py-3 px-5 fw-light" type="button">
                     Watch a movie instead
                 </button>
