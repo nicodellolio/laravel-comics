@@ -4,20 +4,34 @@
 </div>
 
 <div class="main_header d-flex bg-light justify-content-evenly align-items-center py-3">
+
     <div class="logo">
-        <img src="{{ Vite::asset('resources/images/dc-logo.png') }}" alt="">
+        <a href="{{ route('home') }}">
+            <img src="{{ Vite::asset('resources/images/dc-logo.png') }}" alt="">
+        </a>
     </div>
     <nav>
         <ul class="nav_list d-flex list-unstyled fs-5">
-            <li class="px-3 text-uppercase">characters</li>
-            <li class="px-3 text-uppercase">comics</li>
+
+            <li class="px-3 text-uppercase">
+                <a href="{{ route('characters') }}">characters</a>
+            </li>
+
+            <li class="px-3 text-uppercase">
+                <a href="{{ route('comics') }}">comics</a>
+            </li>
 
             <li class="px-3 text-uppercase">
                 <a href="{{ route('movies') }}">movies</a>
             </li>
             
-            <li class="px-3 text-uppercase">news</li>
-            <li class="px-3 text-uppercase">shop</li>
+            <li class="px-3 text-uppercase">
+                <a href="{{ route('news') }}">news</a>
+            </li>
+
+            <li class="px-3 text-uppercase">
+                <a href="{{ route('shop') }}">shop</a>
+            </li>
         </ul>
     </nav>
     <div class="search border-bottom border-primary">

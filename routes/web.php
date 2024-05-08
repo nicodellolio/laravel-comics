@@ -15,6 +15,15 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
 
+    $data = [
+
+    ];
+    
+    return view('home', $data);
+})->name('home');
+
+Route::get('/comics', function () {
+
     
     $comics = config('comics');
     
@@ -32,8 +41,8 @@ Route::get('/', function () {
         'comics' => $comics
     ];
     
-    return view('home', $data);
-});
+    return view('comics', $data);
+})->name('comics');
 
 Route::get('/movies', function () {
 
@@ -49,5 +58,26 @@ Route::get('/movies', function () {
     return view('movies', $data);
 })->name('movies');
 
+Route::get('/characters', function () {
 
+    $data = [
+    ];
+    
+    return view('characters',$data);
+})->name('characters');
 
+Route::get('/news', function () {
+
+    $data = [
+    ];
+    
+    return view('news',$data);
+})->name('news');
+
+Route::get('/shop', function () {
+
+    $data = [
+    ];
+    
+    return view('shop',$data);
+})->name('shop');

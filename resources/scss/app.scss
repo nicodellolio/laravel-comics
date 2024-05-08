@@ -34,8 +34,11 @@ body{
 .my_jumbo{
     background-image: url('../images/purple_bg.avif');
     background-size: cover;
+    background-position: 60%;
+    background-repeat: no-repeat;
     color: white;
     font-weight: 200;
+    height: 100vh;
     .jumbo_container{
         background-color: #450264c5
     }
@@ -68,5 +71,16 @@ body{
 }
 .movies-container{
     background-image: url(../images/movies/1310578.jpg);
-    background-color: purple;
+}
+.comics_collection_grid{
+    background-image: url(../images/comics-bg.jpeg);
+    background-color: #333;
+    background-blend-mode:darken;
+}
+.nothing_to_show{
+    background-image: url(../images/sad-bg.webp);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 35%;
 }
