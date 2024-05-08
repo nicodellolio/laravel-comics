@@ -15,16 +15,33 @@ body{
     cursor: pointer;
 }
 .nav_list{
+    align-items: center;
     margin: 0;
     font-weight: 500;
     >li{
         cursor: pointer;
     }
     height: 100%;
+    margin-top: -1rem;
     box-sizing: border-box;
-    padding-bottom: 2rem;
+    // padding-bottom: 2rem;
     color: gray;
-    padding-top: 2rem;
+    // padding-top: 2rem;
+
+    a{
+        color: #333;
+    }
+}
+.active_item{
+    background-color: purple;
+    // margin-top: 0.9%;
+    transform: scale(1.1);
+    height: 100%;
+    padding: 3rem 0;
+    a{
+        color: white;
+        font-weight: 700;
+    }
 }
 .nav_list::after{
     content: '⏷';

@@ -13,24 +13,24 @@
     <nav>
         <ul class="nav_list d-flex list-unstyled fs-5">
 
-            <li class="px-3 text-uppercase">
-                <a href="{{ route('characters') }}">characters</a>
+            <li class="px-3 text-uppercase {{Route::currentRouteName() === 'characters' ? 'active_item' :''}} ">
+                <a class="text-decoration-none" href="{{ route('characters') }}">characters</a>
             </li>
 
-            <li class="px-3 text-uppercase">
-                <a href="{{ route('comics') }}">comics</a>
+            <li class="px-3 text-uppercase {{Route::currentRouteName() === 'comics' ? 'active_item' :''}} ">
+                <a class="text-decoration-none" href="{{ route('comics') }}">comics</a>
             </li>
 
-            <li class="px-3 text-uppercase">
-                <a href="{{ route('movies') }}">movies</a>
+            <li class="px-3 text-uppercase {{Route::currentRouteName() === 'movies' ? 'active_item' :''}}">
+                <a class="text-decoration-none" href="{{ route('movies') }}">movies</a>
             </li>
             
-            <li class="px-3 text-uppercase">
-                <a href="{{ route('news') }}">news</a>
+            <li class="px-3 text-uppercase {{Route::currentRouteName() === 'news' ? 'active_item' :''}}">
+                <a class="text-decoration-none" href="{{ route('news') }}">news</a>
             </li>
 
-            <li class="px-3 text-uppercase">
-                <a href="{{ route('shop') }}">shop</a>
+            <li class="px-3 text-uppercase {{Route::currentRouteName() === 'shop' ? 'active_item' :''}}">
+                <a class="text-decoration-none" href="{{ route('shop') }}">shop</a>
             </li>
         </ul>
     </nav>
