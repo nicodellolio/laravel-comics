@@ -81,3 +81,17 @@ Route::get('/shop', function () {
     
     return view('shop',$data);
 })->name('shop');
+
+Route::get('/comic/{id}', function ($id) {
+
+    $comics = config('comics');
+    $comicsCollection = collect($comics);
+
+    $comic = config('comics')[$id];
+
+    $data = [
+        'comic' => $comic
+    ];
+
+    return view('comics', $data);
+})->name('comic');
